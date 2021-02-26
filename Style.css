@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: lightskyblue;
+}
+
+/*Header*/
+.nav-bar{
+    background: lightgray;
+    align: right;
+}
+span{
+    margin: 0 20px;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    padding-bottom: 10px;
+}
+span:hover{
+    font-size: 33px;
+    color: black;
+}
+.menu-right{
+    text-align: right;
+}
+#menu{
+    margin-right: 15px;
+}
+ul li{
+    display: inline-block;
+    padding: 1rem;
+    font-family: "Arial Rounded MT Bold";
+    color: white;
+    cursor: pointer;
+}
+ul li:hover{
+    border-bottom: 3px Solid red;
+    background-color: darkgray;
+    transition: 1s ease-in-out;
+}
+.active{
+    background-color: darkgrey;
+    color: green;
+}
+
+/*MainBody*/
+.mainbody{
+    padding: 3rem;
+
+}
+.mainbody h1{
+    font-size: 54px;
+    font-family: "Arial Black";
+}
+h4{
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+#menu{
+    display: inline-block;
+}
+
+img{
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+.cardl{
+    float: left;
+    margin-top: 40px;
+    background: whitesmoke;
+    margin-left: 100px;
+    clear: both;
+    box-shadow: 0 4px 8px 0 cornflowerblue;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.cardr{
+    background: whitesmoke;
+    float: right;
+    margin-top: 40px;
+    margin-right: 100px;
+    clear: both;
+    box-shadow: 0 4px 8px 0 cornflowerblue;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+h3{
+    padding: 1rem;
+}
+
+/*Footer*/
+.footer-container{
+    /*background-color: black;*/
+    padding-top: 4rem;/*1rem = 16px>*/
+}
+#box{
+    height: 100px;
+}
+.footer{
+    padding-top: 40px;
+    width: 100%;
+    /*height: 40vh;*/
+    color: white;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+.footer-heading h2{
+    margin-bottom: 2rem;
+}
+.footer-heading a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+.footer-heading a:hover{
+    color: cornflowerblue;
+    font-size: 20px;
+    transition: 2s ease-out;
+}
+.footer-email-form h2{
+    margin-bottom: 2rem;
+}
+#footer-email{
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    /*margin-bottom: 1rem;*/
+    font-size: 1rem;
+}
+#footer-email:hover{
+    cursor: pointer;
+}
+#footer-email-btn{
+    background-color: rebeccapurple;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+#footer-email-btn:hover{
+    cursor: pointer;
+    background: green;
+    width: 100px;
+    height: 50px;
+    transition: 2s ease-in-out;
+}
+#footer-email::placeholder{
+    color: darkseagreen;
+}
+.mid{
+    text-align: center;
+    color: white;
+}
+
+@media screen and (Max-Width:700px){
+    span{
+        display: block;
+    }
+    #menu{
+        display: none;
+    }
+    ul li{
+        display: block;
+    }
+    .cardl{
+        float: none;
+        margin: auto;
+    }
+    .cardr{
+        float: none;
+        margin: auto;
+    }
+    .cardl img{
+        width: 100%;
+    }
+    .cardr img{
+        width: 100%;
+    }
+}
+@media only screen and (Max-Width:1150px){
+    .footer{
+        height: 50vh;
+    }
+    .footer-email-form{
+        margin-top: 4rem;
+    }
+    #menu{
+        display: inline-block;
+    }
+    span{
+        display: none;
+    }
+
+}
+@media only screen and (Max-Width:820px){
+    .footer{
+        padding-top: 2rem;
+    }
+    .mid{
+        padding-top: 3rem;
+    }
+
+    span{
+        display: block;
+    }
+    #menu{
+        display: none;
+    }
+    ul li{
+        display: block;
+    }
+    .cardl{
+        float: none;
+        margin: auto;
+    }
+    .cardr{
+        float: none;
+        margin: auto;
+    }
+    .cardl img{
+        width: 100%;
+    }
+    .cardr img{
+        width: 100%;
+    }
+}
+@media only screen and (Max-Width:720px){
+    .footer-3{
+        display: none;
+    }
+    .footer-email-form{
+        margin-top: 2rem;
+    }
+    ul li{
+        display: block;
+    }
+}
