@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>WebProject2</title>
+</head>
+<body>
+<div class="container">
+    <div class="nav-bar">
+        <div class="menu-right">
+            <span onclick="MyFunction()">&#9776;</span>
+            <ul id="menu">
+                <li class="active" >HOME</li>
+                <li>ABOUT</li>
+                <li>BLOGS</li>
+                <li>SERVICES</li>
+                <li>CONTACT</li>
+                <li>REGISTER</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainbody">
+        <h1 align="center">WELCOME TO MY WALLPAPER HUB</h1>
+        <div class="cardl">
+            <img class="left" src="LIVE TOUR LIFE TO THE FULLEST.jpg" height="200px">
+            <h3>LIVE TOUR LIFE TO THE FULLEST</h3>
+        </div>
+        <div class="cardr">
+            <img class="right" src="CODING IS PASSION.jpg" height="200px">
+            <h3>CODING IS PASSION</h3>
+        </div>
+        <div class="cardl">
+            <img class="left" src="competitive programming.jpg" height="200px">
+            <h3>competitive programming</h3>
+        </div>
+        <div class="cardr" style="margin-bottom: 30px">
+            <img class="right" src="Eat Sleep Code Repeat.jpg" height="200px" >
+            <h3>Eat Sleep Code Repeat</h3>
+        </div>
+    </div>
+    <div id="box"></div>
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>About Us</h2>
+                <a href="#">Blog</a>
+                <a href="#">Customers</a>
+                <a href="#">Feedback</a>
+                <a href="#">Investors</a>
+                <a href="#">Terms of services</a>
+
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Contact Us</h2>
+                <a href="#">Jobs</a>
+                <a href="#">Support</a>
+                <a href="#">Contact</a>
+                <a href="#">Sponsorship</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2>Social Media</h2>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Youtube</a>
+            </div>
+            <div class="footer-email-form">
+                <h2>Join our newsletter</h2>
+                <input type="email" placeholder="Enter your email address" id="footer-email">
+                <input type="submit" value="Sign Up" id="footer-email-btn">
+            </div>
+
+        </div>
+    </div>
+    <h4>@Copyright - SHUBH PURWAR(striver_01)</h4>
+</div>
+<script>
+    function MyFunction(){
+        var x = document.getElementById("menu");
+        if(x.style.display==="none")
+            x.style.display = "block";
+        else
+            x.style.display="none";
+    }
+
+</script>
+</body>
+</html>
